@@ -1,23 +1,6 @@
 # Nguyễn Duy Tuấn - 24810310492
-## Máy Tính – Event Handler Dùng Chung Cho Nút Số
-
 Bài tập Windows Forms (C#): form máy tính đơn giản, minh họa việc gán chung một sự kiện cho nhiều nút bằng cách ép kiểu `object sender`.
-
 ## Đề bài
-
-Thiết kế Form máy tính, gán chung 1 Event Handler cho 10 nút bấm số từ 0 đến 9 bằng tham số `object sender`.
-
-## Yêu cầu và cách đáp ứng
-
-| Yêu cầu | Cách thực hiện |
-|---|---|
-| Tạo 10 nút `btn0..btn9`, gán chung sự kiện `NumberButton_Click` | Cả 10 nút đều `Click += NumberButton_Click` trong `Form1.Designer.cs` |
-| Ép kiểu `Button btn = (Button)sender;` và nối chuỗi vào `txtDisplay.Text` | Thực hiện trong `NumberButton_Click` (`Form1.cs`) |
-| Các nút phép toán `+ - * / =` và `C` (Clear) | `OperatorButton_Click` dùng chung cho `+ - * /`; `btnEquals_Click` tính kết quả; `btnClear_Click` reset màn hình |
-
-## Công nghệ
-
-- C# / .NET Windows Forms
 
 ## Cấu trúc project
 
@@ -28,13 +11,6 @@ CalculatorApp/
 ├── Program.cs            # Điểm khởi chạy ứng dụng
 └── README.md
 ```
-
-## Cách chạy
-
-1. Mở Visual Studio → **File > New Project** → chọn **Windows Forms App (.NET)**.
-2. Đặt tên project là `CalculatorApp` (trùng namespace trong code).
-3. Thay nội dung 3 file `Form1.cs`, `Form1.Designer.cs`, `Program.cs` bằng code trong repo.
-4. Nhấn **F5** để chạy.
 
 ## Kết quả
 
